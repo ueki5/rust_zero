@@ -13,6 +13,7 @@ members = [
     "ch05/mod_ex3",
     "ch05/visibility",
     "ch06/regex",
+    "ch07/zrsh",
     "ch08/ackerman",
     "ch08/dbg_target",
     "ch08/zdbg",

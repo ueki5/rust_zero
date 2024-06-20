@@ -1,0 +1,657 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mul'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mul",
+                    "--package=mul"
+                ],
+                "filter": {
+                    "name": "mul",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'mul'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=mul",
+                    "--package=mul"
+                ],
+                "filter": {
+                    "name": "mul",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'sort'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=sort",
+                    "--package=sort"
+                ],
+                "filter": {
+                    "name": "sort",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'sort'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=sort",
+                    "--package=sort"
+                ],
+                "filter": {
+                    "name": "sort",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rwlock'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rwlock",
+                    "--package=rwlock"
+                ],
+                "filter": {
+                    "name": "rwlock",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rwlock'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rwlock",
+                    "--package=rwlock"
+                ],
+                "filter": {
+                    "name": "rwlock",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'display'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=display",
+                    "--package=display"
+                ],
+                "filter": {
+                    "name": "display",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'display'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=display",
+                    "--package=display"
+                ],
+                "filter": {
+                    "name": "display",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'iter'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=iter",
+                    "--package=iter"
+                ],
+                "filter": {
+                    "name": "iter",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'iter'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=iter",
+                    "--package=iter"
+                ],
+                "filter": {
+                    "name": "iter",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'serialize'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=serialize",
+                    "--package=serialize"
+                ],
+                "filter": {
+                    "name": "serialize",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'serialize'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=serialize",
+                    "--package=serialize"
+                ],
+                "filter": {
+                    "name": "serialize",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'markdown'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=markdown"
+                ],
+                "filter": {
+                    "name": "markdown",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mod_ex2'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mod_ex2",
+                    "--package=mod_ex2"
+                ],
+                "filter": {
+                    "name": "mod_ex2",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'mod_ex2'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=mod_ex2",
+                    "--package=mod_ex2"
+                ],
+                "filter": {
+                    "name": "mod_ex2",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'mod_ex3'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=mod_ex3",
+                    "--package=mod_ex3"
+                ],
+                "filter": {
+                    "name": "mod_ex3",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'mod_ex3'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=mod_ex3",
+                    "--package=mod_ex3"
+                ],
+                "filter": {
+                    "name": "mod_ex3",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'visibility'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=visibility",
+                    "--package=visibility"
+                ],
+                "filter": {
+                    "name": "visibility",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'visibility'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=visibility",
+                    "--package=visibility"
+                ],
+                "filter": {
+                    "name": "visibility",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'regex'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=regex"
+                ],
+                "filter": {
+                    "name": "regex",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'regex'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=regex",
+                    "--package=regex"
+                ],
+                "filter": {
+                    "name": "regex",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'regex'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=regex",
+                    "--package=regex"
+                ],
+                "filter": {
+                    "name": "regex",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug benchmark 'benchmark'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bench=benchmark",
+                    "--package=regex"
+                ],
+                "filter": {
+                    "name": "benchmark",
+                    "kind": "bench"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'ackerman'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=ackerman",
+                    "--package=ackerman"
+                ],
+                "filter": {
+                    "name": "ackerman",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'ackerman'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=ackerman",
+                    "--package=ackerman"
+                ],
+                "filter": {
+                    "name": "ackerman",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'dbg_target'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=dbg_target",
+                    "--package=dbg_target"
+                ],
+                "filter": {
+                    "name": "dbg_target",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'dbg_target'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=dbg_target",
+                    "--package=dbg_target"
+                ],
+                "filter": {
+                    "name": "dbg_target",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'zdbg'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=zdbg",
+                    "--package=zdbg"
+                ],
+                "filter": {
+                    "name": "zdbg",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'zdbg'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=zdbg",
+                    "--package=zdbg"
+                ],
+                "filter": {
+                    "name": "zdbg",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'parser'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=parser",
+                    "--package=parser"
+                ],
+                "filter": {
+                    "name": "parser",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'parser'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=parser",
+                    "--package=parser"
+                ],
+                "filter": {
+                    "name": "parser",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'zerosh'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=zerosh",
+                    "--package=zerosh"
+                ],
+                "filter": {
+                    "name": "zerosh",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'zerosh'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=zerosh",
+                    "--package=zerosh"
+                ],
+                "filter": {
+                    "name": "zerosh",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'linz'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=linz",
+                    "--package=linz"
+                ],
+                "filter": {
+                    "name": "linz",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'linz'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=linz",
+                    "--package=linz"
+                ],
+                "filter": {
+                    "name": "linz",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

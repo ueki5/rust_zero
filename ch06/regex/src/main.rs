@@ -37,7 +37,6 @@ fn match_file(expr: &str, file: &str) -> Result<(), DynError> {
     let reader = BufReader::new(f);
 
     engine::print(expr)?;
-    println!();
 
     for line in reader.lines() {
         let line = line?;
@@ -48,7 +47,6 @@ fn match_file(expr: &str, file: &str) -> Result<(), DynError> {
             }
         }
     }
-
     Ok(())
 }
 
